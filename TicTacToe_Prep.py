@@ -8,7 +8,7 @@ def position_choice():
     choice = 'Wrong'
 
     while choice not in ['0','1','2']:
-        print('Please choose a Number (0,1,2): ')
+        input('Please choose a Number (0,1,2): ')
 
         if choice not in ['0','1','2']:
             print('Sorry! Invalid Choice')

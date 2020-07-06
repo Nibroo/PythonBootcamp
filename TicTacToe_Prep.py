@@ -4,11 +4,10 @@ def display_game(game_list):
 
 
 def position_choice():
-    
     choice = 'Wrong'
 
     while choice not in ['0','1','2']:
-        input('Please choose a Number (0,1,2): ')
+        choice = input('Please choose a Number (0,1,2): ')
 
         if choice not in ['0','1','2']:
             print('Sorry! Invalid Choice')
@@ -25,16 +24,15 @@ def replacement_choice(game_list,position):
 
 
 def gameon_choice():
-    
     choice = 'Wrong'
 
-    while choice not in ['Y','N']:
-        print('Wanna keep playing? (Y/N): ')
+    while choice not in ['y','n']:
+        choice = input('Wanna keep playing? (Y/N): ').lower()
 
-        if choice not in ['Y','N']:
+        if choice not in ['y','n']:
             print("Sorry! can't accept, Choose Y or N")
         
-    if choice == 'Y':
+    if choice == 'y':
         return True
     else:
         print('Okay! See you again!')

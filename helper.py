@@ -25,3 +25,10 @@
 # print(i)
 #?--------------------------------------------------------------------------------------------------
 
+# guess_num = input('Guess a number between 1 to 30: ')
+
+# while guess_num not in range(1,31):
+#     guess_num = int(input('Please guess a number between 1 to 30: '))
+# guess_num =  int(guess_num)
+#?--------------------------------------------------------------------------------------------------
+

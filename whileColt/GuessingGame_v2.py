@@ -6,9 +6,7 @@ def nums():                                 #? TO MAKE LIST OF STRING INTEGARS
     nums = []
     for i in range(1,31):
         nums.append(str(i))
-
     return nums
-
 
 def guess_in(nums):                        #* TO MAKE SURE PLAYER INSERTS A NUMBER BETWEEN 1 and 30
     guess_num = input('Guess a number between 1 to 30: ')
@@ -17,7 +15,6 @@ def guess_in(nums):                        #* TO MAKE SURE PLAYER INSERTS A NUMB
         guess_num = input('Please guess a number between 1 to 30: ')
     else:
         return int(guess_num)
-
 
 def guessing(guess_num):                   #? TO MAKE THE LOOP RUN UNTIL THE GUESS IS PERFECT
     while rand_num != guess_num:
@@ -36,7 +33,6 @@ def guessing(guess_num):                   #? TO MAKE THE LOOP RUN UNTIL THE GUE
         guess_num = int(guess_num)    
     else:
         print('You Won, FINALLY!')
-
 
 def gameon_choice():                        #* TO KEEP PLAYING OR QUITTING
     choice = 'Wrong'

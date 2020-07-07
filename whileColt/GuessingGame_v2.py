@@ -3,9 +3,7 @@ import random
 rand_num = random.randint(1,31)
 
 def nums():                                 #? TO MAKE LIST OF STRING INTEGARS
-    nums = []
-    for i in range(1,31):
-        nums.append(str(i))
+    nums = [str(i) for i in range(31)]
     return nums
 
 def guess_in(nums):                        #* TO MAKE SURE PLAYER INSERTS A NUMBER BETWEEN 1 and 30
@@ -58,3 +56,4 @@ while game_on:
     guess_num = guess_in(nums)
     guessing(guess_num)
     game_on = gameon_choice()
+    
